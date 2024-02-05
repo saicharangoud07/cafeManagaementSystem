@@ -1,0 +1,15 @@
+
+<!-- forgot-password.component.html -->
+<div class="container mt-5">
+    <h2>Forgot Password</h2>
+  
+    <form (ngSubmit)="onSubmit()" novalidate>
+      <div class="form-group">
+        <label for="userEmail">Enter your email address:</label>
+        <input type="email" class="form-control" id="userEmail" name="userEmail" [(ngModel)]="userEmail" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary"click= "onSubmit()">Submit</button>
+    </form>
+  </div>
+  

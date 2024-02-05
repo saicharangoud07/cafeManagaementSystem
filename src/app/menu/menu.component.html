@@ -1,0 +1,9 @@
+<div class="menu-container">
+  <div *ngFor="let category of menuItems" class="category">
+    <h2>{{ category.category }}</h2>
+    <div *ngFor="let item of category.items" class="menu-item">
+      <p><strong>{{ item.name }}</strong></p>
+      <p class="price">$ {{ item.price.toFixed(2) }}</p>
+    </div>
+  </div>
+</div>

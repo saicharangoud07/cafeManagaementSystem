@@ -1,0 +1,104 @@
+.navbar {
+  background: linear-gradient(45deg, #8B4513, #A52A2A);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFF;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #FFF;
+}
+
+/* Style the buttons in the navbar */
+#buttons .btn {
+  margin-left: 10px;
+  background-color: #8B4513; /* Brown color */
+  border: none;
+}
+
+/* Style the login and register buttons */
+.btn-success {
+  background-color: #8B4513; /* Brown color */
+  border: none;
+}
+
+.btn-primary {
+  background-color: #A52A2A; /* Brown color */
+  border: none;
+}
+
+/* Style the carousel */
+#carouselExampleCaptions {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+/* Style the carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #A52A2A;
+}
+
+/* Style the carousel indicators */
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators button {
+  background-color: #A52A2A;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #FFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+  }
+
+  .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #8B4513; /* Brown color */
+    border: none;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Further adjustments for even smaller screens */
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+  }
+}

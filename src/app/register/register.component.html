@@ -1,0 +1,52 @@
+<div class="registration-container">
+  <h2>Customer Registration Form</h2>
+ 
+  <form (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="user.email" required class="form-control" #emailInput="ngModel" email>
+      <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="error-message">
+        Please enter a valid email.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="user.name" required class="form-control" aria-required="true">
+    </div>
+<!-- 
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" required class="form-control" #passwordInput="ngModel" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+      <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="error-message">
+        Password must be at least 8 characters long and include a combination of letters and numbers.
+      </div>
+    </div> -->
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" required class="form-control" #passwordInput="ngModel" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}">
+      <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="error-message">
+        Password must be at least 8 characters long and include a combination of letters and numbers.
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required class="form-control" #confirmPasswordInput="ngModel" [pattern]="user.password">
+      <div *ngIf="confirmPasswordInput.invalid && (confirmPasswordInput.dirty || confirmPasswordInput.touched)" class="error-message">
+        Passwords do not match. Please try again.
+      </div>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input type="tel" id="number" name="number" [(ngModel)]="user.number" required class="form-control" #numberInput="ngModel" pattern="[0-9]{10}">
+      <div *ngIf="numberInput.invalid && (numberInput.dirty || numberInput.touched)" class="error-message">
+        Please enter a valid 10-digit number.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>

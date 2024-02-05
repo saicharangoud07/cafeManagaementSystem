@@ -1,0 +1,28 @@
+<form [formGroup]="buyItemForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" type="email" formControlName="email">
+  </div>
+
+  <div>
+    <label for="item">Item:</label>
+    <input id="item" type="text" formControlName="item">
+  </div>
+
+  <div>
+    <label for="price">Price:</label>
+    <input id="price" type="number" formControlName="price">
+  </div>
+
+  <div>
+    <label for="quantity">Quantity:</label>
+    <input id="quantity" type="number" formControlName="quantity">
+  </div>
+
+  <button type="submit">Buy Item</button>
+</form>

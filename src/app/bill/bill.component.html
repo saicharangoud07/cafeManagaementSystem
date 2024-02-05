@@ -1,0 +1,39 @@
+<!-- bill.component.html -->
+<div class="bill-container">
+  <h1 class="text-center mt-5">Order Summary</h1>
+  <div class="order-details-container">
+    <form [formGroup]="orderForm" (ngSubmit)="placeOrder()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" formControlName="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" formControlName="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Table Number:</label>
+        <input type="text" id="address" name="address" formControlName="address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" formControlName="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" formControlName="paymentMethod" required>
+          <option value="phonepay">Phonepay</option>
+          <option value="paytm">Paytm</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="cash">Cash on Delivery</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-success">Place Order</button>
+    </form>
+  </div>
+</div>

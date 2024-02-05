@@ -1,0 +1,51 @@
+/* bill.component.css */
+
+/* Center the bill container */
+.bill-container {
+    background-color: #D2B48C; /* Light brown background */
+    padding: 20px;
+    margin-top: 2px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 500px; /* Limit the width for better readability on larger screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  }
+  
+  /* Style the order details container */
+  .order-details-container {
+    margin-top: 10px;
+  }
+  
+  /* Style form elements */
+  label {
+    display: block;
+    margin-bottom: 1px;
+    color: #444; /* Dark text color */
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the Place Order button */
+  .btn-success {
+    background-color: #8B4513; /* SaddleBrown color */
+    color: #fff; /* White text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-success:hover {
+    background-color: #7A3E11; /* Darker SaddleBrown color on hover */
+    transform: scale(1.05); /* Add a slight scale effect for a 3D look */
+  }
+  

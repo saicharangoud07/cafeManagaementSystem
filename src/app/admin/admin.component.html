@@ -1,0 +1,29 @@
+<div class="admin">
+  <h1>Admin Page</h1>
+  <div class="admin-table-container">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Number</th>
+          <th>Password</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.number }}</td>
+          <td>{{ item.password }}</td>
+          <td><button class="update-btn" >Update</button></td>
+          <td><button class="delete-btn" (click)="deleteItem(item.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

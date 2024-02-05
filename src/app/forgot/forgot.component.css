@@ -1,0 +1,34 @@
+/* forgot-password.component.css */
+.container {
+    margin-top: 5rem;
+    width: 30%;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #02080e; /* Bootstrap's primary color */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #107b2c; /* Bootstrap's primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0a763a; /* Darker shade on hover */
+  }
+  

@@ -1,0 +1,39 @@
+.jumbotron {
+    background-image: url('../../assets/images/imp.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 247, 247, 0.789);
+    position: relative;
+    padding: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 500px;
+    width: 1200px;
+  }
+  
+  .jumbotron .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color:rgba(231, 166, 16, 0.952);
+  }
+  
+  .image {
+    width: 30%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  

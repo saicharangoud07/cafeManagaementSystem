@@ -1,0 +1,18 @@
+<section class="foods-list">
+  <div class="product" *ngFor="let food of foods">
+    <img src="{{ food.image }}" alt="{{ food.name }}">
+    <div class="product-details">
+      <h2>{{ food.name }}</h2>
+      <p class="description">{{ food.description }}</p>
+      <p class="price">{{ food.price | currency:'USD':true }}</p>
+      <div class="buttons-container">
+        <button class="add-to-cart" (click)="addToCart(food)" >Add to Cart</button>
+      
+
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showSuccessMessage" class="success-message">
+    Added to cart successfully!
+  </div>
+</section>

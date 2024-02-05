@@ -1,0 +1,16 @@
+<section class="mocktails-list">
+    <div class="product" *ngFor="let mocktail of mocktails">
+        <img src="{{ mocktail.image }}" alt="{{ mocktail.name }}">
+        <div class="product-details">
+            <h2>{{ mocktail.name }}</h2>
+            <p class="description">{{ mocktail.description }}</p>
+            <p class="price">{{ mocktail.price | currency:'USD':true }}</p>
+            <button class="add-to-cart" (click)="addToCart(mocktail)" >Add to Cart</button>
+            
+        </div>
+    </div>
+    <div *ngIf="showSuccessMessage" class="success-message">
+        Added to cart successfully!
+      </div>
+</section>
+

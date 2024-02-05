@@ -1,0 +1,46 @@
+<div>
+  <h1 class="text-center mt-5">Your Cart</h1>
+
+  <div *ngIf="!cartItems || cartItems.length === 0" class="empty-cart-container text-center mt-3">
+    <div class="empty-cart">
+      <img src="assets/images/emptycart.png" alt="Empty Cart">
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+
+  <div *ngIf="cartItems && cartItems.length > 0" class="cart-items-container mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of cartItems">
+          <div class="card mb-3">
+            <!-- <img class="card-img-top" [src]="'assets/images/' + item.prodImage" alt="Product Image"> -->
+            <div class="card-body">
+              <h4 class="card-title">{{ item.name }}</h4>
+              <p class="card-text">{{ item.description }}</p>
+              <p><b>Quantity:</b> {{ item.quantity }}</p>
+              <div class="quantity-control">
+                <button class="btn btn-secondary" (click)="decreaseQuantity(item)">-</button>
+                <button class="btn btn-secondary" (click)="increaseQuantity(item)">+</button>
+              </div>
+              <p class="text-right">
+                <button class="btn btn-danger" (click)="removeItem(item)">Remove Item</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total-price text-center">
+      <h3>Total Price: ₹{{ getTotalPrice() }}/-</h3>
+    
+      <!-- Buttons for Empty Cart and Order Now -->
+      <div class="cart-buttons">
+        <button class="btn btn-danger" (click)="emptyCart()">Empty Cart</button>
+       <!-- Example: If you have a button in your cart.component.html -->
+<button class="btn btn-success" [routerLink]="['/bill']">Order Now</button>
+
+      </div>
+    </div>
+  </div>
+</div>

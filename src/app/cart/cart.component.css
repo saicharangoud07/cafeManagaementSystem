@@ -1,0 +1,43 @@
+/* cart.component.css */
+
+/* Add a light brown background to the main container */
+.cart-container {
+  background-color: #D2B48C; /* Light Brown color */
+  padding: 20px;
+}
+
+/* Style the empty cart container */
+.empty-cart-container {
+  padding: 20px;
+}
+
+/* Style the card for each item in the cart */
+.card {
+  background-color: #F5F5DC; /* Beige color */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.empty-cart img {
+  width: 200px; /* Adjust the percentage based on your preference */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Style the total price section */
+.total-price {
+  background-color: #D2B48C; /* Light Brown color */
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Style the buttons in the cart */
+.cart-buttons button {
+  margin-right: 10px;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Make each card take full width on small screens */
+  }
+}

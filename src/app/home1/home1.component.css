@@ -1,0 +1,125 @@
+.jumbotron {
+  background-image: url('../../assets/images/imp.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 247, 247, 0.789);
+  position: relative;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: -18.5px;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+.jumbotron .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color:rgba(231, 166, 16, 0.952);
+}
+
+.image {
+  width: 30%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+footer {
+  background-color: #dccdb9;
+  padding: 30px 0;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.footer-logo h1 {
+  font-size: 1.5rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.address,
+.contact {
+  flex: 1; /* Equal width for address and contact sections */
+  margin-right: 30px;
+  margin-bottom: 20px; /* Add space between sections */
+}
+
+.address h3,
+.contact h3,
+.social-media h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold; /* Added to make h3 headers bold */
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+/* Placeholder styles for social media icons - replace with actual styles or font-awesome classes */
+.social-media li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #333; /* Replace with the background color for your icons */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff; /* Replace with the text color for your icons */
+  font-size: 1.2rem;
+}
+
+.social-media li a:hover {
+  background-color: #555; /* Replace with the hover background color for your icons */
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .address,
+  .contact {
+      width: 100%;
+  }
+}

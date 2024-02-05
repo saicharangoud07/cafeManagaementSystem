@@ -1,0 +1,57 @@
+/* Navigation bar styles */
+
+.navbar {
+    background-color: #4d3319; /* Dark brown background color (coffee color) */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc66; /* Light brown text color (coffee color) */
+  }
+  
+  .navbar-toggler {
+    border: 1px solid #ffcc66; /* Light brown border for the toggler button */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffcc66; /* Light brown color for the toggler icon */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffcc66; /* Light brown text color for nav links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #e69900; /* Darker brown color on hover */
+  }
+  
+  .navbar-nav .dropdown-menu {
+    background-color: #4d3319; /* Dark brown background for the dropdown menu */
+    border: 1px solid #ffcc66; /* Light brown border for the dropdown menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for the dropdown */
+  }
+  
+  .dropdown-item {
+    color: #ffcc66; /* Light brown text color for dropdown items */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #402b13; /* Darker brown background on hover */
+  }
+  
+  .form-control {
+    border: 1px solid #ffcc66; /* Light brown border for the search input */
+    color: #ffcc66; /* Light brown text color for the search input */
+  }
+  
+  .btn-success {
+    background-color: #996633; /* Dark brown color for the search button */
+    border: 1px solid #996633; /* Dark brown border for the search button */
+  }
+  
+  .btn-success:hover {
+    background-color: #804d26; /* Darker brown background on hover */
+  }
+  
